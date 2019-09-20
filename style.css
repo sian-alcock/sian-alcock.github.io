@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a, p, h1, h2, h3, h4 {
+	font-family: 'Roboto', serif;
+  color: #000080;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  color: black;
+}
+
+i {
+  color: #000080;
+}
+
+td {
+  padding: 0 10px;
+}
+
+/* navbar */
+nav {
+  padding: 10px;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(105,105,105);
+  padding: 0 2px 4px 2px;
+  margin: 0 5px 0 5px;
+  border-bottom: 3px solid white;
+  }
+
+a:hover {
+  border-bottom: 3px solid #000080;
+  color: #000080;
+}
+
+.hero-body, .hero-sub {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+// Media query to handle background images for intersection
+@media only screen and (max-width: 600px) {
+  .hero-body, .hero-sub {
+    // width: 100%;
+    width: 100vw;
+    background-attachment: local;
+  }
+}
+
+.image-one {
+  background-image: url('https://images.unsplash.com/photo-1534525062064-6c7148b842e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+}
+.image-two {
+  background-image: url('https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+}
+.image-three {
+  background-image: url('https://images.unsplash.com/photo-1566937169390-7be4c63b8a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+}
+.image-four {
+  background-image: url('https://images.unsplash.com/photo-1544044407-9d2da66393f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1252&q=80');
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 300px;
+  padding: auto 0;
+  margin: 60px auto 100px auto;
+}
+
+.hero-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-body h1 {
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 4rem;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	text-shadow: 0px 1px 3px rgb(105,105,105);
+}
+
+@keyframes up {
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* These styles support the slide-in skills section */
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  opacity: 0;
+  transition: all .5s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.left-panel {
+  width: 300px;
+  height: 200px;
+  transform: translateX(-90%);
+}
+
+.right-panel {
+  width: 300px;
+  height: 200px;
+  transform: translateX(90%);
+}
+
+.centre-panel {
+  width: 300px;
+  height: 300px;
+}
+
+.panel.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.skill {
+  padding: 5px 10px;
+  background-color: #c9daf8;
+  display: inline-block;
+  margin: 5px 5px;
+  border-radius: 20px;
+}
+
+.skill p {
+  margin: 0;
+}
+
+/* These styles support the profile section */
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centre-panel img {
+  border: 1px solid rgb(211,211,211);
+  border-radius: 50%;
+}
+
+.contact {
+  display: inline-block;
+}
