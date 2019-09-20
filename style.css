@@ -1,11 +1,11 @@
 *,
-*::before,
-*::after {
+ {
 	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 a, p, h1, h2, h3, h4 {
@@ -60,14 +60,14 @@ a:hover {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
+  width: 100vw;
+
 }
 
-// Media query to handle background images for intersection
+/* Media query to handle background images for intersection */
 @media only screen and (max-width: 600px) {
   .hero-body, .hero-sub {
-    // width: 100%;
-    width: 100vw;
     background-attachment: local;
   }
 }
@@ -90,7 +90,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 100vw;
   height: 300px;
   padding: auto 0;
   margin: 60px auto 100px auto;
@@ -100,6 +100,8 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .hero-body h1 {
@@ -122,9 +124,16 @@ a:hover {
 
 /* These styles support the slide-in skills section */
 
+@media only screen and (max-width: 600px) {
+  .skills-container {
+    display: block;
+  }
+}
+
 .skills-container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  flex-wrap: wrap; */
 }
 
 .panel {
@@ -138,19 +147,17 @@ a:hover {
 
 .left-panel {
   width: 300px;
-  height: 200px;
   transform: translateX(-90%);
 }
 
 .right-panel {
   width: 300px;
-  height: 200px;
   transform: translateX(90%);
 }
 
 .centre-panel {
   width: 300px;
-  height: 300px;
+
 }
 
 .panel.active {
@@ -164,6 +171,7 @@ a:hover {
   display: inline-block;
   margin: 5px 5px;
   border-radius: 20px;
+  box-shadow: 0px 1px 3px rgb(105,105,105);
 }
 
 .skill p {
@@ -173,8 +181,8 @@ a:hover {
 /* These styles support the profile section */
 
 .profile-container {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .centre-panel img {
