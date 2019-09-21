@@ -18,12 +18,12 @@ h1, h2 {
 
 h3 {
   color: #000080;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 h4 {
   color: #000080;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 p {
@@ -202,12 +202,18 @@ a:hover {
 
 .profile p {
   width: 300px;
+  text-align: justify;
+}
+
+.profile div {
+  margin: 15px 5px;
 }
 
 /* These styles support the project section */
 
 .project-container {
   text-align: center;
+    align-items: center;
 }
 
 .project {
@@ -218,7 +224,7 @@ a:hover {
 .project img {
   border: 1px solid rgb(211,211,211);
   width: 300px;
-  margin-bottom: 5px;
+  margin: 10px auto;
   display: block;
 }
 
@@ -240,10 +246,31 @@ a:hover {
   border: 1px solid rgb(211,211,211);
   width: 300px;
   margin-bottom: 30px;
+  padding: 10px;
+}
+
+.experience p {
+  text-align: justify;
+}
+
+.experience a {
+  color: #000080;
+  border-bottom: none;
+}
+
+p.duration {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 4px;
+  border-bottom: 1px solid rgb(211,211,211);
 }
 
 /* These styles support the footer section */
 
 footer {
     text-align: center;
+}
+
+.contact div {
+  margin: 15px 5px;
 }
