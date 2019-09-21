@@ -22,7 +22,7 @@ h3 {
 }
 
 p {
-  color: black;
+  color: rgb(105,105,105);
 }
 
 i {
@@ -42,8 +42,8 @@ nav {
 a {
   text-decoration: none;
   color: rgb(105,105,105);
-  padding: 0 2px 4px 2px;
-  margin: 0 5px 0 5px;
+  padding: 4px 2px 4px 2px;
+  margin: 4px 5px 0 5px;
   border-bottom: 3px solid white;
   }
 
@@ -179,15 +179,46 @@ a:hover {
 /* These styles support the profile section */
 
 .profile-container {
-  /* display: flex;
-  justify-content: center; */
+  text-align: center;
 }
 
-.centre-panel img {
+.profile {
+  align-items: center;
+  text-align: center;
+}
+
+.profile img {
   border: 1px solid rgb(211,211,211);
   border-radius: 50%;
 }
 
-.contact {
-  display: inline-block;
+.profile p {
+  width: 300px;
+}
+
+/* These styles support the project section */
+
+.project-container {
+  text-align: center;
+}
+
+.project {
+  align-items: center;
+  text-align: center;
+}
+
+.project img {
+  border: 1px solid rgb(211,211,211);
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+.project img {
+  display: block;
+}
+
+.project p {
+  width: 300px;
+  text-align: justify;
+  margin: 10px auto;
 }

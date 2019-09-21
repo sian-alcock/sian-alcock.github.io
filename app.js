@@ -1,5 +1,7 @@
 // This function prevents the scroll event from logging too many times
 
+const panels = document.querySelectorAll('.panel')
+
 function debounce(func, wait = 20, immediate = true) {
   var timeout
   return function() {
@@ -14,10 +16,6 @@ function debounce(func, wait = 20, immediate = true) {
     if (callNow) func.apply(context, args)
   }
 }
-
-const panels = document.querySelectorAll('.panel')
-
-console.log(panels)
 
 function checkSlide() {
   panels.forEach(panel => {

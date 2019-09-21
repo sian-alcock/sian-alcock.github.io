@@ -16,8 +16,9 @@
        <a href="#S1">Home</a>
        <a href="#S2">Profile</a>
        <a href="#S3">Skills</a>
-       <a href="#S4">Experience</a>
-       <a href="#S5">Contact</a>
+       <a href="#S4">Projects</a>
+       <a href="#S5">Experience</a>
+       <a href="#S6">Contact</a>
      </nav>
      </div>
     </header>
@@ -32,37 +33,29 @@
         </section>
       </div>
       <section class="flexbox">
-        <h3 class="herotext">Profile</h3>
+        <h3 id="S2" class="herotext">Profile</h3>
         <div class="profile-container">
-          <div class="panel left-panel">
+          <div class="profile">
             <p>After working in a software development environment for many years, I am excited to be changing direction and pursuing a role as a Developer.</p>
             <p>My goal is to work in a dynamic, ethical organization that will help me consolidate my skills and where I can contribute to the creation of ground-breaking coding solutions.</p>
           </div>
-          <div class="panel centre-panel">
-            <img src="https://i.imgur.com/Q7nNR8i.jpg" alt="Sian Alcock profile picture" height="250px">
+          <div class="profile">
+            <img src="./assets/sian.jpg" alt="Sian Alcock profile picture" height="250px">
           </div>
-          <div class="panel contact right-panel">
-            <table>
-              <tr>
-                <td><p><i class="far fa-envelope fa-3x"></i></p></td>
-                <td><p>sian.alcock@lawena.org</p></td>
-              </tr>
-              <tr>
-                <td><p><i class="fab fa-github fa-3x"></i></p></td>
-                <td><p>GitHub</p></td>
-              </tr>
-              <tr>
-                <td><p><i class="fab fa-linkedin-in fa-3x"></i></p></td>
-                <td><p>Linked in</p></td>
-              </tr>
-            </table>
+          <div class="profile">
+                <div><a href="mailto:sian.alcock@lawena.org"><i class="far fa-envelope fa-3x"></i></a></div>
+                <div><p>sian.alcock@lawena.org</p></div>
+                <div><a href="https://github.com/sian-alcock"><i class="fab fa-github fa-3x"></i></a></div>
+                <div><p>GitHub</p></div>
+                <div><a href="https://linkedin.com/in/sianalcock"><i class="fab fa-linkedin-in fa-3x"></i></a></div>
+                <div><p>Linked in</p></div>
           </div>
         </div>
       </section>
       <div class="hero-sub image-two"> -->
       </div>
       <section class="flexbox">
-        <h3 class="herotext">Technical skills</h3>
+        <h3 id="S3" class="herotext">Technical skills</h3>
         <div class="skills-container">
           <div class="panel left-panel">
             <div class="skill"><p>JavaScript</p></div>
@@ -96,19 +89,55 @@
       <div class="hero-sub image-three">
       </div>
       <section class="flexbox">
-        <h3 class="herotext">Tools</h3>
-        <p class="herotext">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h3 id="S4" class="herotext">Development projects</h3>
+        <div class="project-container">
+          <h4>Pairs Head Results - extended side project</h4>
+          <div class="project">
+            <p>Following on from my fourth <span class="hidden">project at General Assembly.  This is a real-world application that will hopefully be used to generate results for the Pair's Head Rowing Race in October 2019.</span></p>
+            <img src="./assets/Screenshot-pairshead-extended.png" alt="Pairs head results extended side project screenshot">
+            <a href="https://github.com/sian-alcock/pairshead-results">Readme / Repo</a>
+            <a href="https://pairshead.herokuapp.com/#/">Deployment</a>
+          </div>
+          <h4>Pairs Head Results</h4>
+          <div  class="project">
+            <p>This is a fullstack application built by me as my fourth and final project at General Assembly over 7 days.  It uses Django/Python/SQLite on the backend and React/JavaScript front end.  It's purpose is to automate the preparation of results for the Pair's Head of the River Rowing Race which is held in October every year.</p>
+            <img src="./assets/Screenshot-pairshead.png" alt="Pairs head Project screenshot">
+            <a href="https://github.com/sian-alcock/project-04">Readme / Repo</a>
+            <a href="https://pairshead.herokuapp.com/#/">Deployment</a>
+          </div>
+          <h4>Lost the plot</h4>
+          <div  class="project">
+            <p>For our third project at General Assembly, we were placed into groups of 4 developers and charged with building a fullstack application using Express/MongoDB backend and React/JavaScript frontend.  The idea behind the website is to give users a means of finding green spaces / allotments  / community gardens in London with the goal of growing food.</p>
+            <img src="./assets/Screenshot-lost-the-plot.png" alt="Lost the plot Project screenshot">
+            <a href="https://github.com/sian-alcock/project-03">Readme / Repo</a>
+            <a href="https://lost-the-plot.herokuapp.com/#/">Deployment</a>
+          </div>
+        </div  class="project">
+        <div class="project-container">
+          <h4>Super-heroes - 48 hour hackathon</h4>
+          <div  class="project">
+            <p>This project was a hackathon.  We were put into pairs and asked to build a website using React/JavaScript.  The website had to consume a public API.  We chose Superheroes as our theme and found an API that listed 720 Superheroes.</p>
+            <img src="./assets/Screenshot-superheroes.png" alt="SuperHeroes Project screenshot">
+            <a href="https://github.com/sian-alcock/project-02">Readme / Repo</a>
+            <a href="https://sian-alcock.github.io/project-02/#/">Deployment</a>
+          </div>
+          <h4>Crop Capers</h4>
+          <div  class="project">
+            <p>My first project at General Assembly was to build a grid-based game on my own using JavaScript over 7 days.  I created a fun game called Crop Capers which was based on BattleShips.  Instead of seeking out and destroying battleships, the player seeks out and digs up crops.</p>
+            <img src="./assets/Screenshot-crop-capers.png" alt="Crop Capers Project screenshot">
+            <a href="https://github.com/sian-alcock/project-01">Readme / Repo</a>
+            <a href="https://sian-alcock.github.io/project-01/">Deployment</a>
+          </div>
+        </div>
       </section>
       <div class="hero-sub image-four">
       </div>
       <section class="flexbox">
-        <h3 class="herotext">More ...</h3>
+        <h3 id="S5" class="herotext">More ...</h3>
         <p class="herotext">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
+      </section>
     </main>
   </body>
   <script src="app.js" charset="utf-8"></script>
