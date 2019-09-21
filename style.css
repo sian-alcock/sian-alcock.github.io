@@ -7,9 +7,8 @@ body {
   margin: 0 auto;
 }
 
-a, p, h1, h2, h3, h4 {
+a, p, h1, h2, h3, h4, span {
 	font-family: 'Roboto', serif;
-  color: #000080;
 }
 
 h1, h2 {
@@ -18,7 +17,13 @@ h1, h2 {
 }
 
 h3 {
+  color: #000080;
   font-size: 30px;
+}
+
+h4 {
+  color: #000080;
+  font-size: 24px;
 }
 
 p {
@@ -80,16 +85,19 @@ a:hover {
 }
 
 .image-one {
-  background-image: url('https://images.unsplash.com/photo-1534525062064-6c7148b842e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('./assets/geoffrey-baumbach-water-unsplash.jpg');
 }
 .image-two {
-  background-image: url('https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('./assets/bill-oxford-cogs-unsplash.jpg');
 }
 .image-three {
-  background-image: url('https://images.unsplash.com/photo-1566937169390-7be4c63b8a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('./assets/louis-hansel-tools-unsplash.jpg');
 }
 .image-four {
-  background-image: url('https://images.unsplash.com/photo-1544044407-9d2da66393f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1252&q=80');
+  background-image: url('./assets/moritz-mentges-impact-unsplash.jpg');
+}
+.image-five {
+  background-image: url('./assets/audi-nissen-finish-unsplash.jpg');
 }
 
 .flexbox {
@@ -211,9 +219,6 @@ a:hover {
   border: 1px solid rgb(211,211,211);
   width: 300px;
   margin-bottom: 5px;
-}
-
-.project img {
   display: block;
 }
 
@@ -221,4 +226,24 @@ a:hover {
   width: 300px;
   text-align: justify;
   margin: 10px auto;
+}
+
+/* These styles support the experience section */
+
+.experience-container {
+  text-align: center;
+}
+
+.experience {
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgb(211,211,211);
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+/* These styles support the footer section */
+
+footer {
+    text-align: center;
 }
