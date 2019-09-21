@@ -9,11 +9,11 @@ body {
 
 a, p, h1, h2, h3, h4, span {
 	font-family: 'Roboto', serif;
+  text-align: center;
 }
 
 h1, h2 {
   color: white;
-  text-align: center;
 }
 
 h3 {
@@ -32,10 +32,6 @@ p {
 
 i {
   color: #000080;
-}
-
-td {
-  padding: 0 10px;
 }
 
 /* navbar */
@@ -130,16 +126,10 @@ a:hover {
 
 /* These styles support the slide-in skills section */
 
-@media only screen and (max-width: 600px) {
-  .skills-container {
-    display: block;
-  }
-}
-
 .skills-container {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .panel {
@@ -188,11 +178,15 @@ a:hover {
 
 .profile-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .profile {
   align-items: center;
   text-align: center;
+  margin: 0 30px;
 }
 
 .profile img {
@@ -213,17 +207,25 @@ a:hover {
 
 .project-container {
   text-align: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project {
   align-items: center;
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .project img {
   border: 1px solid rgb(211,211,211);
-  width: 300px;
+  height: 200px;
   margin: 10px auto;
   display: block;
 }
@@ -238,6 +240,9 @@ a:hover {
 
 .experience-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .experience {
@@ -245,6 +250,8 @@ a:hover {
   text-align: center;
   border: 1px solid rgb(211,211,211);
   width: 300px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 30px;
   padding: 10px;
 }
@@ -271,6 +278,19 @@ footer {
     text-align: center;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .contact div {
   margin: 15px 5px;
+}
+
+.acknowledge {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
