@@ -44,6 +44,14 @@ nav {
   padding: 10px;
   background-color: white;
   border-bottom: 1px solid rgb(105,105,105);
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -55,7 +63,7 @@ a {
   }
 
 a:hover {
-  border-bottom: 3px solid #000080;
+  text-decoration: underline;
   color: #000080;
 }
 
@@ -83,12 +91,6 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .hero-body, .hero-sub {
     background-attachment: local;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  nav a {
-    display: block;
   }
 }
 
@@ -189,7 +191,7 @@ a:hover {
 /* These styles support the profile section */
 
 .flexbox p {
-  max-width: 900px;
+  max-width: 450px;
 }
 
 .profile-container {
