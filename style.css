@@ -84,6 +84,10 @@ a:hover {
   .hero-body, .hero-sub {
     background-attachment: local;
   }
+
+  nav a {
+    display: block;
+  }
 }
 
 .image-one {
