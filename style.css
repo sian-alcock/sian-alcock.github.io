@@ -5,10 +5,10 @@
 
 body {
   margin: 0 auto;
+  font-family: 'Roboto', serif;
 }
 
 a, p, h1, h2, h3, h4, span {
-	font-family: 'Roboto', serif;
   text-align: center;
 }
 
@@ -26,8 +26,9 @@ h4 {
   font-size: 18px;
 }
 
-p {
+p, ul, li {
   color: rgb(105,105,105);
+  text-align: left;
 }
 
 i {
@@ -36,15 +37,20 @@ i {
 
 /* navbar */
 nav {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   padding: 10px;
-  background: white;
+  background-color: white;
+  border-bottom: 1px solid rgb(105,105,105);
 }
 
 a {
   text-decoration: none;
   color: rgb(105,105,105);
-  padding: 4px 2px 4px 2px;
-  margin: 4px 5px 0 5px;
+  padding: 4px 0 4px 0;
+  margin: 4px 4px 0 4px;
   border-bottom: 3px solid white;
   }
 
@@ -81,19 +87,19 @@ a:hover {
 }
 
 .image-one {
-  background-image: url('./assets/geoffrey-baumbach-water-unsplash.jpg');
+  background-image: url('./assets/whale.jpg');
 }
 .image-two {
-  background-image: url('./assets/bill-oxford-cogs-unsplash.jpg');
+  background-image: url('./assets/14colors.jpg');
 }
 .image-three {
-  background-image: url('./assets/louis-hansel-tools-unsplash.jpg');
+  background-image: url('./assets/NZ-tongariro.jpg');
 }
 .image-four {
-  background-image: url('./assets/moritz-mentges-impact-unsplash.jpg');
+  background-image: url('./assets/patagonia-skull.jpg');
 }
 .image-five {
-  background-image: url('./assets/audi-nissen-finish-unsplash.jpg');
+  background-image: url('./assets/galapagos.jpg');
 }
 
 .flexbox {
@@ -176,6 +182,10 @@ a:hover {
 
 /* These styles support the profile section */
 
+.flexbox p {
+  max-width: 900px;
+}
+
 .profile-container {
   text-align: center;
   display: flex;
@@ -196,7 +206,6 @@ a:hover {
 
 .profile p {
   width: 300px;
-  text-align: justify;
 }
 
 .profile div {
@@ -232,8 +241,8 @@ a:hover {
 
 .project p {
   width: 300px;
-  text-align: justify;
   margin: 10px auto;
+  text-align: center;
 }
 
 /* These styles support the experience section */
@@ -243,21 +252,17 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 800px;
 }
 
 .experience {
   align-items: center;
   text-align: center;
   border: 1px solid rgb(211,211,211);
-  width: 300px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 10px;
-}
-
-.experience p {
-  text-align: justify;
 }
 
 .experience a {
