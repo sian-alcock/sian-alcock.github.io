@@ -99,7 +99,7 @@ a:hover {
   background-image: url('./assets/patagonia-skull.jpg');
 }
 .image-five {
-  background-image: url('./assets/galapagos.jpg');
+  background-image: url('./assets/galapagos2.jpg');
 }
 
 .flexbox {
@@ -279,8 +279,9 @@ p.duration {
 
 /* These styles support the footer section */
 
-footer {
+footer p {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .contact {
@@ -291,11 +292,4 @@ footer {
 
 .contact div {
   margin: 15px 5px;
-}
-
-.acknowledge {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
 }
