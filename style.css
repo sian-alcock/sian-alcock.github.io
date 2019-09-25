@@ -80,11 +80,13 @@ a:hover {
 }
 
 /* Media query to handle background images for intersection */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   .hero-body, .hero-sub {
     background-attachment: local;
   }
+}
 
+@media only screen and (max-width: 600px) {
   nav a {
     display: block;
   }
