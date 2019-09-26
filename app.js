@@ -43,5 +43,20 @@ function showMenu() {
   menu.classList.toggle('active')
 }
 
+function closeMenu(e) {
+  console.log(e.target)
+  let isBurger = false
+  if (burger.contains(e.target)) {
+    isBurger = true
+  }
+
+  console.log(isBurger)
+
+  if (!isBurger && menu.classList.contains('active')) {
+    menu.classList.remove('active')
+  }
+}
+
 window.addEventListener('scroll', debounce(checkSlide))
 burger.addEventListener('click', showMenu)
+document.addEventListener('click', closeMenu)

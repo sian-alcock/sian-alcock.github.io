@@ -80,11 +80,11 @@ nav a {
   text-decoration: none;
   color: rgb(105,105,105);
   padding: 4px 0 4px 0;
-  margin: 4px 40px 0 4px;
+  margin: 4px 20px 0 4px;
   border-bottom: 3px solid white;
   }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
   color: #000080;
 }
@@ -158,7 +158,7 @@ a:hover {
   background-image: url('./assets/patagonia-skull.jpg');
 }
 .image-five {
-  background-image: url('./assets/galapagos2.jpg');
+  background-image: url('./assets/sealion.jpg');
 }
 
 .flexbox {
@@ -251,6 +251,10 @@ a:hover {
   width: 300px;
 }
 
+.profile a {
+  margin-right: 10px;
+}
+
 .profile div {
   margin: 15px 5px;
 }
@@ -291,6 +295,23 @@ a:hover {
   margin: 10px auto;
   text-align: left;
 }
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: rgb(105,105,105);
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+  color: #000080;
+}
+
 
 /* These styles support the experience section */
 
@@ -335,6 +356,10 @@ footer p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.contact a {
+  margin-right: 10px;
 }
 
 .contact div {
