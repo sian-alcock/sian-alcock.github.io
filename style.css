@@ -93,7 +93,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  height: 450px;
 }
 
 .hero-body h1 {
@@ -105,10 +105,18 @@ a:hover {
 	text-shadow: 0px 1px 3px rgb(105,105,105);
 }
 
+.hero-body h2 {
+	font-size: 40px;
+	text-shadow: 0px 1px 3px rgb(105,105,105);
+}
+
 /* For mobile, make title smaller */
 @media only screen and (max-width: 600px) {
   .hero-body h1 {
     font-size: 60px;
+  }
+  .hero-body h2 {
+    font-size: 30px;
   }
 }
 
