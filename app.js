@@ -1,6 +1,8 @@
 // This function prevents the scroll event from logging too many times
 
 const panels = document.querySelectorAll('.panel')
+const burger = document.querySelector('.burger')
+const menu = document.querySelector('.middle-nav')
 
 function debounce(func, wait = 20, immediate = true) {
   var timeout
@@ -36,4 +38,10 @@ function checkSlide() {
   })
 }
 
+function showMenu() {
+  console.log(menu)
+  menu.classList.toggle('active')
+}
+
 window.addEventListener('scroll', debounce(checkSlide))
+burger.addEventListener('click', showMenu)

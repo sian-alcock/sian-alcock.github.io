@@ -14,6 +14,7 @@ a, p, h1, h2, h3, h4, span {
 
 h1, h2 {
   color: white;
+  padding-top: 50px;
 }
 
 h3 {
@@ -40,29 +41,75 @@ nav {
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  padding: 10px;
+  width: 100vw; /* Full width */
+  padding: 4px 10px;
   background-color: white;
   border-bottom: 1px solid rgb(105,105,105);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
 }
 
+.burger {
+  display: none;
+}
+
+/* For mobile, hide the middle 4 navbar elements and replace with burger menu */
 @media only screen and (max-width: 600px) {
-  nav a {
-    font-size: 14px;
+  .burger {
+    display: inline;
   }
+
+  .middle-nav {
+    display: none;
+  }
+
+  .middle-nav.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.burger-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
   color: rgb(105,105,105);
   padding: 4px 0 4px 0;
-  margin: 4px 4px 0 4px;
+  margin: 4px 40px 0 4px;
   border-bottom: 3px solid white;
   }
 
 a:hover {
   text-decoration: underline;
   color: #000080;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.hero-body h1 {
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 80px;
+	z-index: 1;
+	text-shadow: 0px 1px 3px rgb(105,105,105);
+}
+
+/* For mobile, make title smaller */
+@media only screen and (max-width: 600px) {
+  .hero-body h1 {
+    font-size: 60px;
+  }
 }
 
 .hero-body, .hero-sub {
@@ -81,8 +128,6 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  /* width: 100vw;
-  height: 100vh; */
 }
 
 /* Media query to handle background images for intersection */
@@ -116,24 +161,6 @@ a:hover {
   overflow: hidden;
   padding: auto 0;
   margin: 60px auto 100px auto;
-}
-
-.hero-body h1 {
-	position: relative;
-	display: block;
-	margin: 0;
-	font-size: 4rem;
-	transform: translateY(6rem);
-	animation: up 500ms linear forwards;
-	z-index: 1;
-	text-shadow: 0px 1px 3px rgb(105,105,105);
-}
-
-@keyframes up {
-
-	100% {
-		transform: translateY(0);
-	}
 }
 
 /* These styles support the slide-in skills section */
@@ -188,10 +215,6 @@ a:hover {
 
 /* These styles support the profile section */
 
-.flexbox p {
-  max-width: 450px;
-}
-
 .profile-container {
   text-align: center;
   display: flex;
@@ -219,6 +242,10 @@ a:hover {
 }
 
 /* These styles support the project section */
+
+.intro {
+  max-width: 80%;
+}
 
 .project-container {
   text-align: center;
@@ -248,7 +275,7 @@ a:hover {
 .project p {
   width: 300px;
   margin: 10px auto;
-  text-align: center;
+  text-align: left;
 }
 
 /* These styles support the experience section */
