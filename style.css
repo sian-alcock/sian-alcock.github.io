@@ -138,13 +138,7 @@ nav a:hover {
 	justify-content: center;
 }
 
-/* Media query to handle background images for intersection */
-/* @media only screen and (max-width: 600px) {
-  .hero-body, .hero-sub {
-    background-attachment: local;
-  }
-} */
-
+/* Aimed at ipad Pro */
 @media (hover: none) {
   .hero-body, .hero-sub {
     background-attachment: scroll;
@@ -152,6 +146,17 @@ nav a:hover {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+  }
+}
+
+/* Aimed at mobile which works OK with background size set to cover */
+@media only screen and (max-width: 600px) {
+  .hero-body, .hero-sub {
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
