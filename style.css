@@ -148,6 +148,10 @@ nav a:hover {
 @media (hover: none) {
   .hero-body, .hero-sub {
     background-attachment: scroll;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
   }
 }
 
