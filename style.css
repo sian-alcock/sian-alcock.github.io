@@ -152,9 +152,13 @@ and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-
   .hero-body, .hero-sub {
     background-attachment: scroll;
+    background-size: 100%;
+  }
+
+  .image-one {
+    background-image: url('./assets/whaletail - landscape.jpg');
   }
 }
 
@@ -169,6 +173,11 @@ and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
   .hero-body, .hero-sub {
     background-attachment: scroll;
+    background-size: 100%;
+  }
+
+  .image-one {
+    background-image: url('./assets/whaletail - portrait.jpg');
   }
 }
 
