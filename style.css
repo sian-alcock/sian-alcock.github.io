@@ -145,51 +145,13 @@ nav a:hover {
   }
 }
 
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-@media only screen
-and (min-device-width: 1366px)
-and (max-device-width: 1366px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
-  .hero-body, .hero-sub {
-    background-attachment: scroll;
-    background-size: 100%;
-  }
-
+@media (hover: none) {
   h1, h2 {
     color: pink;
     padding-top: 50px;
   }
-
-  .image-one {
-    background-image: url('./assets/whaletail - landscape.jpg');
-  }
 }
 
-/*ipad PRo 12.9"*/
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1024px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) {
-  .hero-body, .hero-sub {
-    background-attachment: scroll;
-    background-size: 100%;
-  }
-
-  h1, h2 {
-    color: pink;
-    padding-top: 50px;
-  }
-
-  .image-one {
-    background-image: url('./assets/whaletail - portrait.jpg');
-  }
-}
 
 .image-one {
   background-image: url('./assets/whaletail.jpg');
