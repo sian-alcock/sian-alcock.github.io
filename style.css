@@ -120,6 +120,31 @@ nav a:hover {
   }
 }
 
+.hero-body, .hero-sub {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Media query to handle background images for intersection */
+@media only screen and (max-width: 600px) {
+  .hero-body, .hero-sub {
+    background-attachment: local;
+  }
+}
+
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 @media only screen
@@ -144,31 +169,6 @@ and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
   .hero-body, .hero-sub {
     background-attachment: scroll;
-  }
-}
-
-.hero-body, .hero-sub {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-}
-
-.hero-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/* Media query to handle background images for intersection */
-@media only screen and (max-width: 600px) {
-  .hero-body, .hero-sub {
-    background-attachment: local;
   }
 }
 
