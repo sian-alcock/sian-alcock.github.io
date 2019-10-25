@@ -139,15 +139,15 @@ nav a:hover {
 }
 
 /* Media query to handle background images for intersection */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .hero-body, .hero-sub {
     background-attachment: local;
   }
-}
+} */
 
 @media (hover: none) {
   .hero-body, .hero-sub {
-    background-attachment: local;
+    background-attachment: scroll;
   }
 }
 
