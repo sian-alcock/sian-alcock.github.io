@@ -1,5 +1,4 @@
-*,
- {
+* {
 	box-sizing: border-box;
 }
 
@@ -30,6 +29,11 @@ h4 {
 p, ul, li {
   color: rgb(105,105,105);
   text-align: left;
+  line-height: 1.6;
+}
+
+li::marker {
+  color: #000080;   
 }
 
 i {
@@ -160,6 +164,28 @@ nav a:hover {
   }
 }
 
+.example-site {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.example-site-wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .example-site-wrapper {
+    width: 600px;
+  }
+}
+
+.example-site-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .image-one {
   background-image: url('./assets/whaletail.jpg');
