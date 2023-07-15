@@ -5,14 +5,14 @@ const burger = document.querySelector('.burger')
 const menu = document.querySelector('.middle-nav')
 
 function debounce(func, wait = 20, immediate = true) {
-  var timeout
+  let timeout
   return function() {
-    var context = this, args = arguments
-    var later = function() {
+    const context = this, args = arguments
+    const later = function() {
       timeout = null
       if (!immediate) func.apply(context, args)
     }
-    var callNow = immediate && !timeout
+    const callNow = immediate && !timeout
     clearTimeout(timeout)
     timeout = setTimeout(later, wait)
     if (callNow) func.apply(context, args)
@@ -39,18 +39,18 @@ function checkSlide() {
 }
 
 function showMenu() {
-  console.log(menu)
+  // console.log(menu)
   menu.classList.toggle('active')
 }
 
 function closeMenu(e) {
-  console.log(e.target)
+  // console.log(e.target)
   let isBurger = false
   if (burger.contains(e.target)) {
     isBurger = true
   }
 
-  console.log(isBurger)
+  // console.log(isBurger)
 
   if (!isBurger && menu.classList.contains('active')) {
     menu.classList.remove('active')
