@@ -13,17 +13,19 @@
     <header>
      <div class="navbar">
      <nav>
-       <a href="#S1">Home</a>
+       <a class="link" href="#S1">Home</a>
        <div class="burger-wrapper">
-         <a class="burger" href="#menu"><i class="fas fa-bars"></i></a>
+         <a class="burger" href="#menu" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+          <span>Menu</span>
+        </a>
          <div class="middle-nav">
-           <a href="#S2">Profile</a>
-           <a href="#S3">Skills</a>
-           <a href="#S4">Projects</a>
-           <a href="#S5">Experience</a>
+           <a class="link" href="#S2">Profile</a>
+           <a class="link" href="#S3">Skills</a>
+           <a class="link" href="#S5">Experience</a>
          </div>
        </div>
-       <a href="#S6">Contact</a>
+       <a class="link" href="#S6">Contact</a>
      </nav>
      </div>
     </header>
@@ -37,7 +39,7 @@
           </div>
         </section>
       </div>
-      <section class="flexbox">
+      <section class="section-container">
         <h3 id="S2" class="herotext">Profile</h3>
 
         <div class="profile-container">
@@ -80,9 +82,8 @@
         </div>
 
       </section>
-      <div class="hero-sub image-two"> -->
-      </div>
-      <section class="flexbox">
+      <div class="hero-sub image-two"></div>
+      <section class="section-container section-container-skills">
         <h3 id="S3" class="herotext">Technical skills</h3>
 
         <div class="skills-container">
@@ -138,7 +139,7 @@
       <div class="hero-sub image-three">
       </div>
       
-      <section class="flexbox">
+      <section class="section-container">
         <h3 id="S5" class="herotext">Experience</h3>
         <div class="experience-container">
           <div class="experience">
@@ -225,13 +226,13 @@
             <p class="duration">June to October 2019</p>
             <h4>General Assembly - Software Engineering Immersive</h4>
             <p>This challenging and intensive 12 week bootcamp covers fundamental programming and computer science knowledge, as well as experience with languages, frameworks, and libraries.</p>
-            <h5>Projects</h5>
+            <h3>Projects</h3>
             <div class="project-container">
               <div class="project">
                 <h4>Pairs Head Results - extended side project</h4>
                 <div class="project-links">
-                  <a href="https://github.com/sian-alcock/pairshead-2020" target="_blank">Readme / Repo</a>
-                  <a href="https://pairshead-2020.herokuapp.com/" target="_blank">Deployment</a>
+                  <a class="link" href="https://github.com/sian-alcock/pairshead-2020" target="_blank">Readme / Repo</a>
+                  <a class="link" href="https://pairshead-2020.herokuapp.com/" target="_blank">Deployment</a>
                 </div>
                 <div class="example-site-wrapper">
                   <img src="./assets/Screenshot-pairshead-extended.jpg" alt="Pairs head results extended side project screenshot">
@@ -267,8 +268,6 @@
                 <h4>Super-heroes - 48 hour hackathon</h4>
                 <div class="project-links">
                   <a class="link" href="https://github.com/sian-alcock/project-02" target="_blank">Readme / Repo</a>
-                </div>
-                <div class="project-links">
                   <a class="link" href="https://sian-alcock.github.io/project-02/#/" target="_blank">Deployment</a>
                 </div>
                 <div class="example-site-wrapper">
@@ -288,6 +287,7 @@
                 <p>Built this fun, grid-based game on my own using JavaScript.  The game is called Crop Capers and was based on BattleShips.  Instead of seeking out and destroying battleships, the player must seek out and dig up crops.</p>
               </div>
             </div>
+           </div> 
           <div class="experience">
             <p class="duration">August 2018 to April 2019</p>
             <h4>Round the world travel</h4>
@@ -325,7 +325,7 @@
       </div>
     </main>
 
-    <section class="flexbox">
+    <section class="contact-section">
       <h4 id="S6">Contact me</h4>
       <div class="contact">
         <div class="profile">
